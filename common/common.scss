@@ -141,23 +141,22 @@ div.ac-wrap {
 	}
 	
 	.btn-primary,
-	.navigation-controls {
-		.btn {		
-			border-radius: var(--rounded-base); // 2rem;		
-			padding: 0.75rem 1.25rem;
-			font-size: var(--text-sm);
-			line-height: 1rem;
-			font-weight: var(--font-semibold);
-			transition-duration: 200ms;
-			transition-property: all;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.navigation-controls .btn {
+		border-radius: var(--rounded-base); // 2rem;
+		padding: 0.75rem 1.25rem;
+		font-size: var(--text-sm);
+		line-height: 1rem;
+		font-weight: var(--font-semibold);
+		transition-duration: 200ms;
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-			&:hover {
-				color: var(--tertiary-low);
-				background-color: var(--indigo-500);
-			}
+		&:hover {
+			color: var(--tertiary-low);
+			background-color: var(--indigo-500);
 		}
 	}
+
 	
 
 	// breadcrumb select boxes

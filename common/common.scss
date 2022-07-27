@@ -427,7 +427,8 @@ div.ac-wrap {
 }
 
 .alert.alert-info a {
-	color: var(--primary);
+	color: var(--indigo-600); // #
+	font-weight: var(--font-medium); // #
 	text-decoration: underline;
 }
 

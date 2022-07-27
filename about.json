@@ -5,7 +5,7 @@
   "assets": {},
   "name": "Aurora",
   "color_schemes": {
-    "Inky Light": {
+    "Aurora Light": {
       "primary": "1e293b",
       "secondary": "f8fafc",
       "tertiary": "5840b8",
@@ -17,7 +17,7 @@
       "success": "10b981",
       "love": "db2777"
     },
-    "Inky Dark": {
+    "Aurora Dark": {
       "primary": "94a1b2",
       "secondary": "040408",
       "tertiary": "7f5af0",

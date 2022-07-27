@@ -73,6 +73,15 @@ div.ac-wrap {
 	}
 }
 
+// # rounded corners --
+
+.btn,
+.alert-info,
+.quote-button,
+.topic-footer-main-buttons button {
+	border-radius: 0.5rem; //0.25rem;
+}
+
 //*---------------------------*/
 //* Navigation Container
 //*---------------------------*/
@@ -439,14 +448,6 @@ div.ac-wrap {
 	color: var(--indigo-600); // #
 	font-weight: var(--font-medium); // #
 	text-decoration: underline;
-}
-
-// round them corners
-.btn,
-.alert-info,
-.quote-button,
-.topic-footer-main-buttons button {
-	border-radius: 0.5rem; //0.25rem;
 }
 
 .discourse-no-touch .d-header-icons .icon:hover {

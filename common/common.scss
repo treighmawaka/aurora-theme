@@ -567,3 +567,9 @@ nav.post-controls .actions {
 .nav-stacked a.active {
 	background-color: var(--primary-medium);
 }
+
+// # logo --
+
+.d-header #site-logo {
+	height: 26px; // todo: update for mobile
+}

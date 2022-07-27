@@ -3,9 +3,9 @@
 // Global styles
 :root {
 	--font-sans-1: "Inter", sans-serif;
-	
-	--brand-primary: #5840b8; 
-	
+
+	--brand-primary: #5840b8;
+
 	--gray-100: #f3f4f6;
 	--gray-200: #e5e7eb;
 	--gray-300: #d1d5db;
@@ -89,7 +89,7 @@ div.ac-wrap {
 	// breadcrumb
 	.category-breadcrumb {
 		grid-area: breadcrumb;
-		grid-row: 1;		
+		grid-row: 1;
 	}
 
 	// categories, latest, top
@@ -123,7 +123,6 @@ div.ac-wrap {
 		}
 	}
 
-	
 	// buttons
 	.navigation-controls {
 		grid-row: 1;
@@ -132,31 +131,12 @@ div.ac-wrap {
 
 		.btn {
 			background-color: var(--tertiary);
-			color: var(--secondary);			
+			color: var(--secondary);
 			.d-icon {
 				color: var(--secondary);
 			}
 		}
 	}
-	
-	.btn-primary,
-	.navigation-controls .btn {
-		border-radius: var(--rounded-base); // 2rem;
-		padding: 0.75rem 1.25rem;
-		font-size: var(--text-sm);
-		line-height: 1rem;
-		font-weight: var(--font-semibold);
-		transition-duration: 200ms;
-		transition-property: all;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-		&:hover {
-			color: var(--tertiary-low);
-			background-color: var(--indigo-500);
-		}
-	}
-
-	
 
 	// breadcrumb select boxes
 	.select-kit.combo-box {
@@ -174,6 +154,23 @@ div.ac-wrap {
 				border-color: var(--tertiary);
 			}
 		}
+	}
+}
+
+.btn-primary,
+.navigation-container .navigation-controls .btn {
+	border-radius: var(--rounded-base); // 2rem;
+	padding: 0.75rem 1.25rem;
+	font-size: var(--text-sm);
+	line-height: 1rem;
+	font-weight: var(--font-semibold);
+	transition-duration: 200ms;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover {
+		color: var(--tertiary-low);
+		background-color: var(--indigo-500);
 	}
 }
 
@@ -410,6 +407,7 @@ div.ac-wrap {
 .d-header {
 	border-bottom: 1px solid var(--primary-low);
 	background-color: var(--brand-primary);
+	box-shadow: none;
 }
 
 .badge-category-bg {

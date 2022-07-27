@@ -515,12 +515,12 @@ a.cancel {
 }
 
 .alert.alert-info {
-	border: 1px solid var(--indigo-300);
+	border-color: transparent;	
 }
 
 .alert.alert-info a {
 	color: var(--indigo-600); // #
-	font-weight: var(--font-medium); // #
+	font-weight: var(--font-semibold); // #
 	text-decoration: underline;
 }
 

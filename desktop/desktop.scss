@@ -1,0 +1,9 @@
+// # navigation container --
+
+.navigation-container {
+	.category-breadcrumb {
+		grid-area: breadcrumb;
+		grid-row: 1;
+		min-width: 555px;
+	}
+}

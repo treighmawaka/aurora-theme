@@ -4,10 +4,16 @@
 :root {
 	--font-sans-1: "Inter", sans-serif;
 	--tertiary-low: #eef2ff; //#5840b8;
+	--gray-300: #d1d5db;
 	--indigo-300: #a5b4fc;
 	--indigo-500: #6366f1;
-	--text-sm: .875rem;
+	--indigo-600: #4f46e5;
+
+	--text-sm: 0.875rem;
 	--text-base: 1rem;
+	--rounded-base: 2rem;
+	--font-medium: 500;
+	--font-semibold: 600;
 }
 
 html {
@@ -17,6 +23,8 @@ html {
 	font-family: var(--font-sans-1);
 	font-size: var(--text-base); // 112.5%;
 	line-height: 1.5;
+
+	scroll-behavior: smooth; // #
 }
 
 h1,
@@ -75,6 +83,7 @@ div.ac-wrap {
 	.category-breadcrumb {
 		grid-area: breadcrumb;
 		grid-row: 1;
+		min-width: 555px; // todo: update for mobile
 	}
 
 	// categories, latest, top
@@ -117,13 +126,13 @@ div.ac-wrap {
 		.btn {
 			background-color: var(--tertiary);
 			color: var(--secondary);
-			border-radius: 2rem;
+			border-radius: var(--rounded-base); // 2rem;
 			// padding-right: 1rem;
 			// padding-left: 1rem;
 			padding: 0.75rem 1.25rem;
 			font-size: var(--text-sm);
 			line-height: 1rem;
-			font-weight: 600;
+			font-weight: var(--font-semibold);
 			transition-duration: 200ms;
 			transition-property: all;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -142,10 +151,15 @@ div.ac-wrap {
 	// breadcrumb select boxes
 	.select-kit.combo-box {
 		.select-kit-header {
-			border-radius: 2rem;
-			padding-left: 0.7rem;
+			border: 1px solid var(--gray-300);
+			border-radius: var(--rounded-base); // 2rem;
+			//padding-left: 0.7rem;
+			padding: 0.75rem 1.25rem; // #
 			text-transform: capitalize;
 			border-color: var(--primary-very-low);
+
+			font-size: var(--text-sm);
+			font-weight: var(--font-semibold);
 
 			&:hover {
 				border-color: var(--tertiary);
@@ -327,7 +341,8 @@ div.ac-wrap {
 }
 
 .topic-meta-data .post-info a {
-	color: var(--primary);
+	color: var(--indigo-600); // #
+	font-weight: var(--font-medium); // #
 }
 
 .timeline-container .topic-timeline {

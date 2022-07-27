@@ -32,6 +32,6 @@
   },
   "components": [
     "https://github.com/discourse/discourse-search-banner.git",
-    "https://github.com/discourse/discourse-custom-header-links.git
+    "https://github.com/discourse/discourse-custom-header-links.git"
   ]
 }

@@ -509,6 +509,11 @@ a.cancel {
 .user-main .about .secondary dt {
 	color: var(--primary-medium);
 }
+
+.alert {
+	border-radius: var(--rounded-lg);
+}
+
 .alert.alert-info {
 	border: 1px solid var(--indigo-300);
 }

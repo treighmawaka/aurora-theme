@@ -14,6 +14,9 @@
 	--indigo-300: #a5b4fc;
 	--indigo-500: #6366f1;
 	--indigo-600: #4f46e5;
+	--pink-300: #f9a8d4;
+	--pink-600: #db2777;
+	--pink-600: #db2777;
 	--violet-200: #ddd6fe;
 
 	--text-xs: 0.75rem;
@@ -90,8 +93,17 @@ div.ac-wrap {
 	color: var(--violet-200);
 }
 
+.extra-info-wrapper .topic-link {
+	color: var(--gray-200);
+}
+
 .d-header-icons .d-icon {
 	color: var(--gray-200);
+}
+
+.drop-down-mode .d-header-icons .active .icon {
+	border-color: transparent;
+	background-color: transparent;
 }
 
 // # rounded corners --
@@ -119,6 +131,15 @@ a.cancel {
 	border-color: var(--indigo-300);
 	border-radius: var(--rounded-full);
 	background-color: var(--indigo-50);
+
+	&:hover {
+		color: var(--brand-primary);
+	}
+}
+
+.unread-high-priority-notifications.badge-notification[href] {
+	color: var(--pink-600);
+	background-color: var(--pink-300);
 }
 
 //*---------------------------*/
@@ -628,10 +649,12 @@ nav.post-controls .actions {
 .menu-panel {
 	box-shadow: 0 12px 12px var(--gray-300); // #
 
-	.widget-link:hover {
-		border-radius: var(--rounded-lg);
-
+	.menu-panel .widget-link {
 		font-weight: var(--font-medium);
 		color: var(--gray-600);
+	}
+
+	.widget-link:hover {
+		border-radius: var(--rounded-lg);
 	}
 }

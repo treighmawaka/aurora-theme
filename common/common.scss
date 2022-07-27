@@ -3,7 +3,9 @@
 // Global styles
 :root {
 	--font-sans-1: "Inter", sans-serif;
-	--tertiary-low: #eef2ff; //#5840b8;
+	
+	--brand-primary: #5840b8; 
+	
 	--gray-100: #f3f4f6;
 	--gray-200: #e5e7eb;
 	--gray-300: #d1d5db;
@@ -18,6 +20,7 @@
 	--font-semibold: 600;
 
 	--highlight-medium: var(--gray-100);
+	--tertiary-low: #eef2ff; //#5840b8;
 }
 
 html {
@@ -403,6 +406,7 @@ div.ac-wrap {
 //*---------------------------*/
 .d-header {
 	border-bottom: 1px solid var(--primary-low);
+	background-color: var(--brand-primary);
 }
 
 .badge-category-bg {

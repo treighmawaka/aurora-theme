@@ -4,6 +4,8 @@
 :root {
 	--font-sans-1: "Inter", sans-serif;
 	--tertiary-low: #eef2ff; //#5840b8;
+	--gray-100: #f3f4f6;
+	--gray-200: #e5e7eb;
 	--gray-300: #d1d5db;
 	--indigo-300: #a5b4fc;
 	--indigo-500: #6366f1;
@@ -14,6 +16,8 @@
 	--rounded-base: 2rem;
 	--font-medium: 500;
 	--font-semibold: 600;
+
+	--highlight-medium: var(--gray-100);
 }
 
 html {
@@ -182,7 +186,7 @@ div.ac-wrap {
 		th {
 			border-top: 1px solid var(--primary-very-low);
 			border-bottom: 1px solid var(--primary-very-low);
-			background-color: var(--highlight-medium);
+			background-color: var(--gray-200); // # var(--highlight-medium)
 			color: var(--primary);
 		}
 
@@ -572,4 +576,10 @@ nav.post-controls .actions {
 
 .d-header #site-logo {
 	height: 26px; // todo: update for mobile
+}
+
+// # menu --
+
+.menu-panel {
+	box-shadow: 0 12px 12px rgb(0 0 0 / 10%); // #
 }

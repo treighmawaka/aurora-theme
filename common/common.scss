@@ -9,15 +9,26 @@
 	--gray-100: #f3f4f6;
 	--gray-200: #e5e7eb;
 	--gray-300: #d1d5db;
+	--gray-600: #4b5563;
+	--indigo-50: #eef2ff;
 	--indigo-300: #a5b4fc;
 	--indigo-500: #6366f1;
 	--indigo-600: #4f46e5;
+	--violet-200: #ddd6fe;
 
+	--text-xs: 0.75rem;
 	--text-sm: 0.875rem;
 	--text-base: 1rem;
 	--rounded-base: 2rem;
+	--rounded-lg: 0.5rem;
+	--rounded-full: 9999px;
 	--font-medium: 500;
 	--font-semibold: 600;
+
+	--line-height-sm: 1.25rem;
+
+	--spacing-xs: 0.25rem;
+	--spacing-sm: 0.625rem;
 
 	--highlight-medium: var(--gray-100);
 	--tertiary-low: #eef2ff; //#5840b8;
@@ -73,13 +84,41 @@ div.ac-wrap {
 	}
 }
 
+// # header --
+
+.extra-info-wrapper .badge-wrapper.bullet span.badge-category {
+	color: var(--violet-200);
+}
+
+.d-header-icons .d-icon {
+	color: var(--gray-200);
+}
+
 // # rounded corners --
 
 .btn,
 .alert-info,
 .quote-button,
 .topic-footer-main-buttons button {
-	border-radius: 0.5rem; //0.25rem;
+	border-radius: var(--rounded-full);
+}
+
+// # links --
+
+a.cancel {
+	font-weight: var(--font-medium);
+}
+
+// # badges --
+
+.badge-notification {
+	color: var(--indigo-600);
+	font-weight: var(--font-semibold);
+	font-size: var(--text-xs);
+	padding: var(--spacing-xs) var(--spacing-sm);
+	border-color: var(--indigo-300);
+	border-radius: var(--rounded-full);
+	background-color: var(--indigo-50);
 }
 
 //*---------------------------*/
@@ -588,4 +627,11 @@ nav.post-controls .actions {
 
 .menu-panel {
 	box-shadow: 0 12px 12px var(--gray-300); // #
+
+	.widget-link:hover {
+		border-radius: var(--rounded-lg);
+
+		font-weight: var(--font-medium);
+		color: var(--gray-600);
+	}
 }

@@ -9,6 +9,7 @@
 	--gray-100: #f3f4f6;
 	--gray-200: #e5e7eb;
 	--gray-300: #d1d5db;
+	--gray-500: #6b7280;
 	--gray-600: #4b5563;
 	--indigo-50: #eef2ff;
 	--indigo-300: #a5b4fc;
@@ -89,6 +90,11 @@ div.ac-wrap {
 
 // # header --
 
+.custom-search-banner-wrap p {
+	color: var(--gray-500);
+	font-weight: var(--font-medium);
+}
+
 .extra-info-wrapper .badge-wrapper.bullet span.badge-category {
 	color: var(--violet-200);
 }
@@ -109,7 +115,6 @@ div.ac-wrap {
 // # rounded corners --
 
 .btn,
-.alert-info,
 .quote-button,
 .topic-footer-main-buttons button {
 	border-radius: var(--rounded-full);
@@ -510,13 +515,18 @@ a.cancel {
 .user-main .about .secondary dt {
 	color: var(--primary-medium);
 }
+
+.alert {
+	border-radius: var(--rounded-lg);
+}
+
 .alert.alert-info {
-	border: 1px solid var(--indigo-300);
+	border-color: transparent;	
 }
 
 .alert.alert-info a {
 	color: var(--indigo-600); // #
-	font-weight: var(--font-medium); // #
+	font-weight: var(--font-semibold); // #
 	text-decoration: underline;
 }
 

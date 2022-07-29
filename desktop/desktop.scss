@@ -13,3 +13,10 @@
 		min-width: 555px;
 	}
 }
+
+// # input fields --
+
+.search-menu .search-input,
+.search-menu .search-input input#search-term {
+	border-radius: var(--rounded-full);
+}

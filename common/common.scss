@@ -5,12 +5,19 @@
 	--font-sans-1: "Inter", sans-serif;
 
 	--brand-primary: #5840b8;
+	--brand-secondary: #ffce00;
+	--brand-secondary-tint: #ffd833;
 
+	--slate-500: #64748b;
+	--gray-50: #fafafa;
 	--gray-100: #f3f4f6;
 	--gray-200: #e5e7eb;
 	--gray-300: #d1d5db;
+	--gray-400: #9ca3af;
 	--gray-500: #6b7280;
 	--gray-600: #4b5563;
+	--gray-800: #1f2937;
+	--gray-900: #0f172a;
 	--indigo-50: #eef2ff;
 	--indigo-300: #a5b4fc;
 	--indigo-500: #6366f1;
@@ -18,6 +25,8 @@
 	--pink-300: #f9a8d4;
 	--pink-600: #db2777;
 	--pink-600: #db2777;
+	--purple-300: #d8b4fe;
+	--purple-400: #c084fc;
 	--violet-200: #ddd6fe;
 
 	--text-xs: 0.75rem;
@@ -521,7 +530,7 @@ a.cancel {
 }
 
 .alert.alert-info {
-	border-color: transparent;	
+	border-color: transparent;
 }
 
 .alert.alert-info a {
@@ -676,5 +685,52 @@ nav.post-controls .actions {
 
 	.widget-link:hover {
 		border-radius: var(--rounded-lg);
+	}
+}
+
+// # DARK MODE OVERRIDES ----------
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: var(--gray-50);
+		--primary-high: var(--gray-300); // common body text color
+		--primary-medium: var(--slate-500);
+		--tertiary: #7f5af0;
+	}
+
+	// header buttons
+	.header-buttons .btn-primary {
+		&.login-button {
+			background-color: var(--brand-secondary);
+			&:hover {
+				background-color: var(--brand-secondary-tint);
+			}
+		}
+
+		&.signup-button {
+			background-color: var(--purple-400);
+			&:hover {
+				background-color: var(--purple-300);
+			}
+		}
+	}
+
+	// menu
+
+	.menu-panel {
+		box-shadow: none;
+
+		.widget-link:hover {
+			background-color: var(--gray-800);
+			border-radius: var(--rounded-lg);
+		}
+	}
+
+	.custom-search-banner-wrap p {
+		color: var(--gray-400);
+	}
+
+	.topic-list thead th {
+		background-color: var(--gray-800);
 	}
 }

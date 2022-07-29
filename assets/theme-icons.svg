@@ -21,7 +21,6 @@
   </symbol>
 
   <symbol id="aurora-theme-icon-wrench" viewBox="0 0 32 32">
-    <title>wrench-tool</title>
     <g fill="currentColor">
       <path d="M30.359,6,25.55,10.81,21.191,6.451,26,1.643A8.173,8.173,0,0,0,15.275,12.3L1.381,24.21a1.09,1.09,0,0,0-.062,1.6l4.874,4.874a1.09,1.09,0,0,0,1.6-.061L19.7,16.726A8.173,8.173,0,0,0,30.359,6Z" fill="currentColor"></path>
     </g>

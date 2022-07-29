@@ -18,6 +18,8 @@
 	--gray-600: #4b5563;
 	--gray-800: #1f2937;
 	--gray-900: #0f172a;
+	--indigo-100: #e0e7ff;
+	--indigo-200: #c7d2fe;
 	--indigo-50: #eef2ff;
 	--indigo-300: #a5b4fc;
 	--indigo-500: #6366f1;
@@ -171,6 +173,20 @@ a.cancel {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: var(--rounded-full);
+}
+
+// # sub pages --
+
+.nav-pills > li > a {
+	background-color: var(--indigo-100);
+	color: var(--indigo-600);
+	border-radius: var(--rounded-full);
+	font-weight: var(--font-semibold);
+	font-size: var(--text-sm);
+
+	&:hover {
+		background-color: var(--indigo-200);
+	}
 }
 
 //*---------------------------*/

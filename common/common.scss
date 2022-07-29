@@ -156,6 +156,13 @@ a.cancel {
 	background-color: var(--brand-secondary);
 }
 
+// # input fields --
+
+.search-menu .search-input,
+.search-menu .search-input input#search-term {
+	border-radius: var(--rounded-full);
+}
+
 // # controls --
 
 .edit-controls .btn,

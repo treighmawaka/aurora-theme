@@ -370,7 +370,7 @@ a.cancel {
 
 		.category {
 			border: 1px solid var(--tertiary);
-			border-radius: 0.25rem;
+			border-radius: var(--rounded-lg);
 		}
 
 		.topics {

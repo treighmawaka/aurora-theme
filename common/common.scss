@@ -285,9 +285,13 @@ a.cancel {
 	}
 
 	.login-button {
-		background-color: var(--tertiary-high);
+		background-color: var(--indigo-500);
+		color: white;
 		&:hover {
 			background-color: var(--tertiary-med-or-tertiary);
+		}
+		.d-icon {
+			color: white;
 		}
 	}
 }

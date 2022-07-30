@@ -708,11 +708,11 @@ nav.post-controls .actions {
 // # menu --
 
 .menu-panel {
-	box-shadow: 0 12px 12px var(--gray-300); // #
+	box-shadow: 0 5px 12px var(--primary-low); // #
 
 	.menu-panel .widget-link {
 		font-weight: var(--font-medium);
-		color: var(--primary-low);
+		color: var(--gray-600);
 	}
 
 	.widget-link:hover {

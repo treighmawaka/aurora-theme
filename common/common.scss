@@ -207,7 +207,7 @@ a.cancel {
 			background-color: var(--highlight);
 
 			&:hover {
-				background-color: var(--tertiary-medium);
+				background-color: var(--tertiary-very-low);
 			}
 
 			&:focus {
@@ -538,10 +538,11 @@ a.cancel {
 	background-color: var(--quaternary);
 }
 
-.alert.alert-info a {
+.alert.alert-info a,
+.alert.alert-info .btn-link {
 	color: var(--tertiary); // #
 	font-weight: var(--font-semibold); // #
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .discourse-no-touch .d-header-icons .icon:hover {

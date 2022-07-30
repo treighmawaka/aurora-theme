@@ -172,23 +172,8 @@ a.cancel {
 	border-radius: var(--rounded-full);
 }
 
-// # sub pages --
+// # Navigation Container --
 
-.nav-pills > li > a {
-	background-color: var(--indigo-100);
-	color: var(--indigo-600);
-	border-radius: var(--rounded-full);
-	font-weight: var(--font-semibold);
-	font-size: var(--text-sm);
-
-	&:hover {
-		background-color: var(--indigo-200);
-	}
-}
-
-//*---------------------------*/
-//* Navigation Container
-//*---------------------------*/
 .navigation-container {
 	margin-bottom: 1rem;
 	align-items: flex-start;
@@ -214,24 +199,28 @@ a.cancel {
 		border-bottom: 2px solid var(--primary-very-low);
 
 		a {
+			color: var(--tertiary);
 			padding-bottom: 0.5rem;
+			font-weight: var(--font-semibold);
+			border-radius: var(--rounded-full);
+			font-size: var(--text-sm);
+			background-color: var(--tertiary-low);
 
 			&:hover {
-				background-color: transparent;
-				color: var(--tertiary);
+				background-color: var(--tertiary-hover);
 			}
 
 			&:focus {
-				background-color: transparent;
+				background-color: var(--tertiary-medium);
 			}
 		}
 
 		.active {
-			border-bottom: 2px solid var(--tertiary);
+			border-bottom-color: transparent;
 
 			.active {
-				background-color: transparent;
 				color: var(--tertiary);
+				background-color: var(--tertiary-medium);
 			}
 		}
 	}
@@ -287,9 +276,8 @@ a.cancel {
 	}
 }
 
-//*---------------------------*/
-//* Topic List Container
-//*---------------------------*/
+// # Topic List Container --
+
 .topic-list {
 	border-collapse: separate;
 
@@ -374,9 +362,8 @@ a.cancel {
 	color: var(--primary-high);
 }
 
-//*---------------------------*/
-//* Category List Container
-//*---------------------------*/
+// # Category List Container --
+
 .category-list {
 	border-collapse: separate;
 	border-spacing: 0 15px;
@@ -399,9 +386,8 @@ a.cancel {
 	}
 }
 
-//*---------------------------*/
-//* Topic Page
-//*---------------------------*/
+// # Topic Page --
+
 .topic-body {
 	padding-left: 5px;
 
@@ -480,9 +466,8 @@ a.cancel {
 	}
 }
 
-//*---------------------------*/
-//* Category Boxes
-//*---------------------------*/
+// # Category Boxes --
+
 .category-boxes .category-box,
 .category-boxes-with-topics .category-box {
 	border-left-width: 0;
@@ -499,9 +484,8 @@ a.cancel {
 	border-top-right-radius: 0.5rem;
 }
 
-//*---------------------------*/
-//* Poll
-//*---------------------------*/
+// # Poll --
+
 .poll-ui-builder .poll-type .poll-type-value {
 	border-radius: 0.25rem;
 
@@ -514,9 +498,8 @@ a.cancel {
 	align-items: flex-start;
 }
 
-//*---------------------------*/
-//* Misc
-//*---------------------------*/
+// # Misc --
+
 .d-header {
 	border-bottom: 1px solid var(--primary-low);
 	background-color: var(--brand-primary);
@@ -627,9 +610,8 @@ nav.post-controls .actions {
 	font-size: var(--font-0);
 }
 
-//*---------------------------*/
-//* Admin Section
-//*---------------------------*/
+// # Admin Section --
+
 .admin-main-nav,
 .reviewable,
 .user-primary-navigation {
@@ -707,71 +689,3 @@ nav.post-controls .actions {
 		border-radius: var(--rounded-lg);
 	}
 }
-
-// # DARK MODE OVERRIDES ----------
-
-// @media (prefers-color-scheme: dark) {
-// 	html {
-// 		background-color: var(--gray-900);
-// 	}
-
-// 	:root {
-// 		--primary: var(--gray-50);
-// 		--primary-high: var(--gray-300); // common body text color
-// 		--primary-medium: var(--slate-500);
-// 		--tertiary: #7f5af0;
-// 		--tertiary-hover: var(--purple-300);
-
-// 		--highlight-medium: #421d95;
-// 	}
-
-// 	// header buttons
-// 	.header-buttons .btn-primary {
-// 		&.signup-button {
-// 			background-color: var(--brand-secondary);
-// 			&:hover {
-// 				background-color: var(--brand-secondary-tint);
-// 			}
-// 		}
-
-// 		&.login-button {
-// 			background-color: var(--purple-400);
-// 			&:hover {
-// 				background-color: var(--purple-300) !important;
-// 			}
-// 		}
-// 	}
-
-// 	// menu
-
-// 	.menu-panel {
-// 		box-shadow: none;
-
-// 		.widget-link:hover {
-// 			background-color: var(--gray-800);
-// 			border-radius: var(--rounded-lg);
-// 		}
-// 	}
-
-// 	.custom-search-banner-wrap p {
-// 		color: var(--gray-400);
-// 	}
-
-// 	.topic-list thead th {
-// 		background-color: var(--gray-800);
-// 	}
-
-// 	// topics list
-
-// 	.topic-list-main-link a.title,
-// 	.topic-list .main-link a.title,
-// 	.latest-topic-list-item .main-link a.title {
-// 		color: var(--purple-400);
-// 	}
-
-// 	.topic-list-item.visited .topic-list-data a.title:not(.badge-notification),
-// 	.latest-topic-list-item.visited a.title:not(.badge-notification),
-// 	.category-topic-link.visited a.title:not(.badge-notification) {
-// 		color: var(--purple-300);
-// 	}
-// }

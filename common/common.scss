@@ -137,7 +137,7 @@ a.cancel {
 // # badges --
 
 .badge-notification {
-	color: var(--indigo-600);
+	color: var(--tertiary);
 	font-weight: var(--font-semibold);
 	font-size: var(--text-xs);
 	padding: var(--spacing-xs) var(--spacing-sm);
@@ -216,11 +216,12 @@ a.cancel {
 		}
 
 		.active {
-			border-bottom-color: transparent;
+			border-radius: var(--rounded-full);
+			border: 1px solid var(--tertiary);
 
 			.active {
 				color: var(--tertiary);
-				background-color: var(--tertiary-medium);
+				background-color: var(--secondary); // off-white in light mode
 			}
 		}
 	}
@@ -446,7 +447,7 @@ a.cancel {
 }
 
 .topic-meta-data .post-info a {
-	color: var(--indigo-600); // #
+	color: var(--tertiary); // #
 	font-weight: var(--font-medium); // #
 }
 
@@ -534,10 +535,11 @@ a.cancel {
 
 .alert.alert-info {
 	border-color: transparent;
+	background-color: var(--quaternary);
 }
 
 .alert.alert-info a {
-	color: var(--indigo-600); // #
+	color: var(--tertiary); // #
 	font-weight: var(--font-semibold); // #
 	text-decoration: underline;
 }

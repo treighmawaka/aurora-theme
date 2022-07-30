@@ -99,7 +99,7 @@ div.ac-wrap {
 // # header --
 
 .custom-search-banner-wrap p {
-	color: var(--gray-500);
+	color: var(--primary-high);
 	font-weight: var(--font-medium);
 }
 
@@ -543,11 +543,10 @@ a.cancel {
 	color: var(--tertiary); // #
 	font-weight: var(--font-semibold); // #
 	text-decoration: none;
-	
-	&:hover { 
+
+	&:hover {
 		text-decoration: underline;
 	}
-		
 }
 
 .discourse-no-touch .d-header-icons .icon:hover {

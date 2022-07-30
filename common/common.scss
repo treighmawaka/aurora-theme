@@ -276,6 +276,22 @@ a.cancel {
 	}
 }
 
+.header-buttons {
+	.sign-up-button {
+		background-color: var(--brand-secondary);
+		&:hover {
+			background-color: var(--brand-secondary-tint);
+		}
+	}
+
+	.login-button {
+		background-color: var(--tertiary-high);
+		&:hover {
+			background-color: var(--tertiary-med-or-tertiary);
+		}
+	}
+}
+
 // # Topic List Container --
 
 .topic-list {
@@ -347,6 +363,10 @@ a.cancel {
 		&:last-of-type {
 			padding-right: 16px;
 		}
+	}
+
+	.topic-excerpt {
+		color: var(--primary-very-high);
 	}
 }
 
